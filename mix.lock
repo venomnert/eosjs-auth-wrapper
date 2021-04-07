@@ -1,0 +1,5 @@
+%{
+  "jason": {:hex, :jason, "1.2.2", "ba43e3f2709fd1aa1dce90aaabfd039d000469c05c56f0b8e31978e03fa39052", [:mix], [{:decimal, "~> 1.0 or ~> 2.0", [hex: :decimal, repo: "hexpm", optional: true]}], "hexpm", "18a228f5f0058ee183f29f9eae0805c6e59d61c3b006760668d8d18ff0d12179"},
+  "nodejs": {:hex, :nodejs, "2.0.0", "9a00d00eabf84ba7a04269de46863e0f87bdf6bc488d5a20972b38ade9012764", [:mix], [{:jason, "~> 1.0", [hex: :jason, repo: "hexpm", optional: false]}, {:poolboy, "~> 1.5.1", [hex: :poolboy, repo: "hexpm", optional: false]}], "hexpm", "3a03df7dbfba435223b4534fbf276db8be5287fbf83c828f2749bf1ffe73e930"},
+  "poolboy": {:hex, :poolboy, "1.5.2", "392b007a1693a64540cead79830443abf5762f5d30cf50bc95cb2c1aaafa006b", [:rebar3], [], "hexpm", "dad79704ce5440f3d5a3681c8590b9dc25d1a561e8f5a9c995281012860901e3"},
+}

@@ -9,20 +9,21 @@ defmodule EosjsAuthWrapper.MixProject do
       start_permanent: Mix.env() == :prod,
       description: description(),
       package: package(),
+      aliases: aliases(),
       deps: deps()
     ]
   end
 
   def application do
     [
+      mod: {EosjsAuthWrapper.Application, []},
       extra_applications: [:logger]
     ]
   end
 
   defp deps do
     [
-      {:nodejs, "~> 2.0"},
-      {:starkbank_ecdsa, "~> 1.0.0"}
+      {:nodejs, "~> 2.0"}
     ]
   end
 
@@ -34,6 +35,15 @@ defmodule EosjsAuthWrapper.MixProject do
     [
       licenses: [:MIT],
       links: %{"GitHub" => "https://github.com/venomnert/eosjs-auth-wrapper"}
+    ]
+  end
+
+  defp aliases do
+    [
+      test: [
+        "cmd npm run --prefix nodejs_auth develop",
+        "test"
+      ]
     ]
   end
 end

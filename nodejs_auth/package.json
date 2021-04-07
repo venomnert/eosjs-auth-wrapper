@@ -1,0 +1,15 @@
+{
+  "name": "assets",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Auth library for Elixir NIF",
+  "main": "./js/app.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "eosjs-api": "^7.0.4",
+    "eosjs-ecc": "^4.0.7"
+  }
+}

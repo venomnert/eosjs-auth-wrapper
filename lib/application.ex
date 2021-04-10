@@ -6,7 +6,7 @@ defmodule EosjsAuthWrapper.Application do
   require Logger
 
   def start(_type, _args) do
-    node_path = Path.join([File.cwd!(), "lib/nodejs_auth/js/"]) |> IO.inspect(label: "PATH")
+    node_path = :code.priv_dir(:eosjs_auth_wrapper) |> to_string()
 
     children = [
       %{

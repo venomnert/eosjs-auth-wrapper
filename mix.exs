@@ -4,13 +4,13 @@ defmodule EosjsAuthWrapper.MixProject do
   def project do
     [
       app: :eosjs_auth_wrapper,
-      version: "0.1.0",
+      version: "0.1.5",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
       description: description(),
       package: package(),
-      aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      aliases: aliases()
     ]
   end
 
@@ -35,14 +35,16 @@ defmodule EosjsAuthWrapper.MixProject do
   defp package() do
     [
       licenses: [:MIT],
-      links: %{"GitHub" => "https://github.com/venomnert/eosjs-auth-wrapper"}
+      links: %{"GitHub" => "https://github.com/venomnert/eosjs-auth-wrapper"},
+      files: ~w(lib/application.ex lib/eosjs_auth_wrapper.ex .formatter.exs mix.exs README* priv)
     ]
   end
 
   defp aliases do
     [
+      publish: ["cmd yarn --cwd lib/nodejs_auth deploy", "hex.publish"],
       test: [
-        "cmd npm run --prefix nodejs_auth develop",
+        "cmd yarn --cwd nodejs_auth develop",
         "test"
       ]
     ]

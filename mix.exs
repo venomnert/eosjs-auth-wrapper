@@ -10,7 +10,14 @@ defmodule EosjsAuthWrapper.MixProject do
       description: description(),
       package: package(),
       deps: deps(),
-      aliases: aliases()
+      aliases: aliases(),
+
+      # Docs
+      name: "EosjsAuthWrapper",
+      source_url: "https://github.com/venomnert/eosjs-auth-wrappers",
+      homepage_url: "https://github.com/venomnert/eosjs-auth-wrappers",
+      # The main page in the docs
+      docs: [main: "EosjsAuthWrapper", extras: ["README.md"]]
     ]
   end
 
@@ -24,7 +31,7 @@ defmodule EosjsAuthWrapper.MixProject do
   defp deps do
     [
       {:nodejs, "~> 2.0"},
-      {:ex_doc, "~> 0.14", only: :dev, runtime: false}
+      {:ex_doc, "~> 0.24", only: :dev, runtime: false}
     ]
   end
 

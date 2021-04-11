@@ -2,27 +2,21 @@
 
 This package is a wrapper for [EOSJS](https://github.com/EOSIO/eosjs-ecc) authentication that utilize ECDSA.
 
+# Installation
 ## Prerequisites 
-* NodeJS 14.0 and greater is required
+1. NodeJS 14.0 and greater is required
+2. Set the following environment variable
+  * `EOS_DEV_ENDPOINT=`
+  * `EOS_PROD_ENDPOINT=`
 
-## Installation
-1. Set the following environment variable
-  * `NODE_ENV=[development|production]`
-  * `EOS_DEV_ENDPOINT="https://staging.nertsiv.dev"`
-  * `EOS_PROD_ENDPOINT="https://prod.nertsiv.dev"`
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `eosjs_auth_wrapper` to your list of dependencies in `mix.exs`:
-
+## Include package
 ```elixir
 def deps do
   [
-    {:eosjs_auth_wrapper, "~> 0.1.0"}
+    {:eosjs_auth_wrapper, "~> 0.1.5"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/eosjs_auth_wrapper](https://hexdocs.pm/eosjs_auth_wrapper).
-
+# Extra API info
+* `get_account_info/1` returns the result as [EOS](https://developers.eos.io/manuals/eos/latest/nodeos/plugins/chain_api_plugin/api-reference/index)

@@ -24,3 +24,4 @@ eosjs_auth_wrapper-*.tar
 
 lib/nodejs_auth/node_modules
 lib/.DS_Store
+.DS_Store

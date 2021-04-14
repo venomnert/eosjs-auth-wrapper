@@ -13,7 +13,7 @@ This package is a wrapper for [EOSJS](https://github.com/EOSIO/eosjs-ecc) authen
 ```elixir
 def deps do
   [
-    {:eosjs_auth_wrapper, "~> 0.1.5"}
+    {:eosjs_auth_wrapper, "~> 0.1.7"}
   ]
 end
 ```

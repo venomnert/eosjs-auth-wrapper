@@ -4,7 +4,7 @@ defmodule EosjsAuthWrapper.MixProject do
   def project do
     [
       app: :eosjs_auth_wrapper,
-      version: "0.1.5",
+      version: "0.1.7",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
       description: description(),

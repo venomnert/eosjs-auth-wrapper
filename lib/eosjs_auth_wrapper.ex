@@ -63,11 +63,11 @@ defmodule EosjsAuthWrapper do
     NodeJS.call({"app", :verify}, [sign, phrase, pub_key])
   end
 
-  defp get_auth_ecdsa_points(sign, phrase) do
+  def get_auth_ecdsa_points(sign, phrase) do
     NodeJS.call({"app", :publicKeyPoints}, [sign, phrase])
   end
 
-  defp gen_rand_signature(phrase) do
+  def gen_rand_signature(phrase) do
     NodeJS.call({"app", :signWithRandom}, [phrase])
   end
 end
